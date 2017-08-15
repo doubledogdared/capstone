@@ -1,13 +1,43 @@
 html {
   font-size: 16px;
+  font-family: "Ubuntu", helvetica, sans-serif;
+}
+
+/* General Specs */
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 30px;
+  color: #4a4a4a;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #4a4a4a;
+}
+
+p {
+  font-size: 1.25rem;
+  color: #404243;
 }
 
 .container {
   display: flex;
 }
 
-/* header */
-.header {
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Header */
+header {
   height: 4rem;
   display: flex;
   width: 100%;
@@ -17,7 +47,7 @@ html {
   top: 0px;
 }
 
-.header .content {
+.content {
   display: flex;
   align-content: center;
   justify-content: space-between;
@@ -45,7 +75,7 @@ header .logo {
   color: #a0a2a2;
 }
 
-.logo span {
+.logo .academy {
   color: #4b4e4f;
 }
 
@@ -59,18 +89,180 @@ header ul {
   display: inline-flex;
   list-style: none;
 }
-/* section-one*/
-.section-one {
+/* Banner */
+.banner {
   display: flex;
+  position: relative;
+  width: 100%;
+  background-color: lightgray;
+  align-items: center;
 }
 
-.section-one .content {
-  display: inline-block;
+.banner .banner-image {
+  width: 60%;
+  position: relative;
+  padding: 3% 3%;
+}
+
+.banner img {
+  width: 100%;
+  position: relative;
+}
+
+.banner-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 40%;
+  position: relative;
+}
+
+.banner-title .title {
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  background-color: #4b4e4f;
+  color: white;
+  padding: 5% 20%;
+  font-size: 2rem;
+}
+
+/* Info */
+.info {
+  display: flex;
+  width: 100%;
+  position: relative;
+  padding-top: 5%;
+}
+
+/* Main Info */
+.main-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  padding: 2% 2%;
+  position: relative;
+  flex: 2;
+}
+
+.main-info img {
+  padding: 32px 24px;
+}
+
+.main-info .title {
+  padding-bottom: 2rem;
+}
+ .main-info h1 {
+   text-align: left;
+   padding-top: 0rem;
+   padding-bottom: 1.5rem;
+ }
+
+/* Sub Info */
+.sub-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 40%;
+  flex: 1;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  border: thin solid lightgray;
+}
+
+.box .image {
+  display: flex;
+  max-width: 50%;
+  height: auto;
+  padding: 3% 3%;
+}
+
+.box img {
+  width: 100%;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  text-align: left;
+  justify-content: center;
+}
+
+.box .box-content h3 {
+  margin: 0;
+}
+
+#lightgray {
   background-color: lightgray;
 }
+/* Start Learning */
+.start-learning {
+  background-color: lightgray;
+  align-items: center;
+}
 
-.section-one .btn {
-  color: white;
-  background-color: dark-gray;
-  margin: 8px;
+.row {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 5%;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 30%;
+  background-color: white;
+}
+
+.course img {
+  width: 100%;
+}
+
+.course-img {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  padding: 5% 5%;
+}
+
+.course-content {
+  padding: 24px 16px;
+}
+
+/* Thesis Info */
+.thesis {
+  max-height:
+}
+
+.main-info video {
+  padding: 0px 24px;
+  max-width: 100%;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .copyright {
+  padding: 1rem 0 0 1.5rem;
+}
+
+footer nav {
+  padding: 1rem 1.5rem 0 0;
+  display: inline-block;
+}
+
+footer a{
+  font-size: 1rem;
+  
 }
